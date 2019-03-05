@@ -46,7 +46,7 @@ console.log("--------------------------------------");
 console.log('--> ' + (chalk.green('Prêt !')));
 console.log('______________________________________');
 
-client.user.setActivity("Open = [ " + client.config.PREFIX + "help ]");
+client.user.setActivity("By Althael = [ " + client.config.PREFIX + "help ]");
   
 });
 
