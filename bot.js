@@ -45,7 +45,7 @@ console.log('--> ' + (chalk.yellow('Bot Par Altael')) +' \n--> ' + (chalk.green(
 console.log("--------------------------------------");
 console.log('--> ' + (chalk.green('Prêt !')));
 console.log('______________________________________');"
-client.user.setActivity("By Althael = [ " + client.config.PREFIX + "help ]");
+client.user.setActivity("Ouvre L'aide = [ " + client.config.PREFIX + "help ]");
   
 });
 
@@ -67,7 +67,7 @@ client.on ("message", async msg => {
 
             if(command.info.permission == "owner"
                     && msg.author.id != client.config.OWNER_ID){
-                msg.channel.send("Commande réservée au **créateur** du bot");
+                msg.channel.send("Commande réservée a l'**owner** du bot");
             }else{
                 command.execute(client, msg, args);
             }
