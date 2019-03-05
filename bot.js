@@ -82,4 +82,4 @@ client.on ("message", async msg => {
 
 ///////////////////////////////////////////////////////////////////////////////
 
-client.login(client.config.TOKEN);
+client.login(token);
