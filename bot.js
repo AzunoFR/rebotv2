@@ -44,8 +44,8 @@ console.log("--------------------------------------");
 console.log('--> ' + (chalk.yellow('Bot Par Altael')) +' \n--> ' + (chalk.green('Connecté avec succès  ')) + ' \n--> ' + (chalk.magenta('Name Bot:              '))+ `[ ${client.user.tag} ]` + ' \n--> ' + (chalk.magenta('Nombre de commandes:   '))+ `[ ${client.commands.length} ]` + ' \n--> '+(chalk.magenta('Le préfix actuel:      ')) +  `[ ${prefix} ]`  + '\n--> '+ (chalk.magenta('Nombre d\'utilisateurs: ')) + `[ ${client.users.size} ]` + '\n--> '+ (chalk.magenta('Nombre salon:          ')) + `[ ${client.channels.size} ]` + '\n--> '+ (chalk.magenta('Nombre de serveurs:    ')) + `[ ${client.guilds.size} ]`);
 console.log("--------------------------------------");
 console.log('--> ' + (chalk.green('Prêt !')));
-console.log('______________________________________');"
-client.user.setActivity("Ouvre L'aide = [ " + client.config.PREFIX + "help ]");
+console.log('______________________________________');
+client.user.setActivity("Ouvre L'aide = [ " + client.config.PREFIX + "help ]", { type: "WATCHING"});
   
 });
 
