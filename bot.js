@@ -46,7 +46,7 @@ console.log("--------------------------------------");
 console.log('--> ' + (chalk.green('Prêt !')));
 console.log('______________________________________');
 let nbserv = client.guilds.size
-client.user.setActivity("Sur " + nbserv + "Serveurs | " + client.config.PREFIX + "help", { type: "WATCHING"});
+client.user.setActivity("Sur " + nbserv + " Serveurs | " + client.config.PREFIX + "help", { type: "WATCHING"});
   
 });
 
