@@ -45,7 +45,7 @@ console.log('--> ' + (chalk.yellow('Bot Par Altael')) +' \n--> ' + (chalk.green(
 console.log("--------------------------------------");
 console.log('--> ' + (chalk.green('Prêt !')));
 console.log('______________________________________');
-client.user.setActivity("Ouvre L'aide | " + client.config.PREFIX + "help", { type: "WATCHING"});
+client.user.setActivity("Ouvre L'aide | " + client.config.PREFIX + "help\nSur ${client.guilds.size} Serveurs", { type: "WATCHING"});
   
 });
 
