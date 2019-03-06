@@ -4,7 +4,12 @@ const chalk = require('chalk');
 
 exports.execute = (client, message, args) => {
      message.delete().catch(O_o=>{}); 
-
+     let totalSeconds = (client.uptime / 1000);
+     let days = Math.floor(totalSeconds / 86400);
+     let hours = Math.floor(totalSeconds / 3600);
+     totalSeconds %= 3600;
+     let minutes = Math.floor(totalSeconds / 60);
+     let seconds = totalSeconds % 60;
      let bicon = client.user.displayAvatarURL;
 
 var msg = `Commandes:     **${client.commands.length}**`;
@@ -12,7 +17,7 @@ var msg = `Commandes:     **${client.commands.length}**`;
     msg += `\nSalons:                **${client.channels.array().length}**`;
     msg += `\nEmojis:                **${client.emojis.array().length}**`;
     msg += `\nPing:                    **${client.ping.toFixed(0)}ms**`;
-    msg += `\nUptime:               **${~~(client.uptime/1000)}s**`;   // TODO fix format
+    msg += `\nUptime:               **${days} Jours, ${hours} Heures, ${minutes} Minutes, ${seconds} Secondes**`;   // TODO fix format
 
     var embed = new Discord.RichEmbed()
         .setColor('RANDOM')
