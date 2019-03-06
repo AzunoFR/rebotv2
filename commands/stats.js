@@ -17,7 +17,7 @@ var msg = `Commandes:     **${client.commands.length}**`;
     msg += `\nSalons:                **${client.channels.array().length}**`;
     msg += `\nEmojis:                **${client.emojis.array().length}**`;
     msg += `\nPing:                    **${client.ping.toFixed(0)}ms**`;
-    msg += `\nUptime:               **${days} Jours, ${hours} Heures, ${minutes} Minutes, ${seconds} Secondes**`;   // TODO fix format
+    msg += `\nUptime: **${days} Jours, ${hours} Heures, ${minutes} Minutes**`;   // TODO fix format
 
     var embed = new Discord.RichEmbed()
         .setColor('RANDOM')
