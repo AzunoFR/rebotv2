@@ -45,8 +45,7 @@ console.log('--> ' + (chalk.yellow('Bot Par Altael')) +' \n--> ' + (chalk.green(
 console.log("--------------------------------------");
 console.log('--> ' + (chalk.green('Prêt !')));
 console.log('______________________________________');
-let nbserv = client.guilds.size
-client.user.setActivity("Sur " + nbserv + " Serveurs | " + client.config.PREFIX + "help", { type: "WATCHING"});
+client.user.setActivity("Ouvre L'aide | " + client.config.PREFIX + "help", { type: "WATCHING"});
   
 });
 
@@ -83,3 +82,10 @@ client.on ("message", async msg => {
 ///////////////////////////////////////////////////////////////////////////////
 
 client.login(token);
+
+/*** EXIT ***/
+process.stdin.resume();
+process.on('SIGINT', function() {
+    client.destroy();
+    process.exit();
+});
