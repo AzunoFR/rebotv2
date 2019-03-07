@@ -1,2 +1,2 @@
-shardCount: 2
+shardCount: 1
 MainScript: bot.js
