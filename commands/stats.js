@@ -12,7 +12,7 @@ exports.execute = (client, message, args) => {
      let seconds = totalSeconds % 60;
      let bicon = client.user.displayAvatarURL;
 
-var tl_ss = 2;
+var tl_ss = 1;
 
 var msg = `Commandes:     **${client.commands.length}**`;
     msg += `\nInstance:                   **${client.shard.id + 1}/${tl_ss}**`;
