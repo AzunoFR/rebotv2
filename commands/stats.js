@@ -14,12 +14,12 @@ exports.execute = (client, message, args) => {
 
 var tl_ss = 1;
 
-var msg = `Commandes:     **${client.commands.length}**`;
-    msg += `\nInstance:                   **${client.shard.id + 1}/${tl_ss}**`;
-    msg += `\nServeurs Dans L'Instance:  **${client.guilds.array().length}**`;
-    msg += `\nSalons Dans L'Instance:   **${client.channels.array().length}**`;
-    msg += `\nEmojis Dans L'Instance:    **${client.emojis.array().length}**`;
-    msg += `\nPing:                    **${client.ping.toFixed(0)}ms**`;
+var msg = `Commandes: **${client.commands.length}**`;
+    msg += `\n**Instance:** **${client.shard.id + 1}/${tl_ss}**`;
+    msg += `\nServeurs: **${client.guilds.array().length}**`;
+    msg += `\nSalons: **${client.channels.array().length}**`;
+    msg += `\nEmojis: **${client.emojis.array().length}**`;
+    msg += `\nPing: **${client.ping.toFixed(0)}ms**`;
     msg += `\nUptime: **${days} Jours, ${hours} Heures, ${minutes} Minutes**`;   // TODO fix format
 
     var embed = new Discord.RichEmbed()
