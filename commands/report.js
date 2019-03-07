@@ -30,7 +30,7 @@ exports.execute = async (client, message, args) => {
           .addField("Pour:", rReason);
   
       let reportschannel = message.guild.channels.find(`name`, "📄logs");
-      if (!reportschannel) return message.channel.send("``Ce serveur n'a pas encore été setup !\nFaites la commande **-setup** pour débuter.``");
+      if (!reportschannel) return message.channel.send("``Ce serveur n'a pas encore été setup !\nFaites la commande -setup pour débuter.``");
 
       reportschannel.send(reportEmbed);
       return;
